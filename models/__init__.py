@@ -1,6 +1,4 @@
-#!/usr/bin/python3
-""" Initialize models for AirBnB clone """
-
+# models/__init__.py
 from os import getenv
 
 if getenv('HBNB_TYPE_STORAGE') == 'db':
