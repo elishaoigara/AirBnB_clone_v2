@@ -347,6 +347,18 @@ if __name__ == "__main__":
         key = key.replace("_", " ")  # Replace underscores with spaces
 
         # Handle value type (string, float, or integer)
+class HBNBCommand(cmd.Cmd):
+    """Command interpreter for AirBnB"""
+    
+    def do_create(self, arg):
+        """Creates a new instance of a class with parameters"""
+        if not arg:
+            print("** class name missing **")
+            return
+        # Add your remaining logic for creating an instance here.
+    
+    if __name__ == "__main__":
+        HBNBCommand().cmdloop()
         if value[0] == "\"" and value[-1] == "\"":
             value = value[1:-1].replace("\\\"", "\"")  # Remove quotes and handle escaped quotes
         elif "." in value:
